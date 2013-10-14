@@ -22,16 +22,16 @@
 		<div class="flexslider">
 			<ul class="slides">
 				<li data-thumb="./img/top/nakazato_lisa091-1000x665.jpg">
-					<a href="/works/-/detail/=/cid=ipz205/"><img src="./img/top/nakazato_lisa091-1000x665.jpg" /></a>
+					<a href="/works/-/detail/=/cid=ipz205/"><img class="photo" src="./img/top/nakazato_lisa091-1000x665.jpg" /></a>
 				</li>
 				<li data-thumb="./img/top/hirona_tachibana06-1000x665.jpg">
-					<a href="/works/-/detail/=/cid=ipz211/"><img src="./img/top/hirona_tachibana06-1000x665.jpg" /></a>
+					<a href="/works/-/detail/=/cid=ipz211/"><img class="photo" src="./img/top/hirona_tachibana06-1000x665.jpg" /></a>
 				</li>
 				<li data-thumb="./img/top/erika_fujishita01-1000x665.jpg">
-					<a href="/works/-/detail/=/cid=ipz201/"><img src="./img/top/erika_fujishita01-1000x665.jpg" /></a>
+					<a href="/works/-/detail/=/cid=ipz201/"><img class="photo" src="./img/top/erika_fujishita01-1000x665.jpg" /></a>
 				</li>
 				<li data-thumb="./img/top/arisa_suzuki04-1000x665.jpg">
-					<a href="/works/-/detail/=/cid=ipz207/"><img src="./img/top/arisa_suzuki04-1000x665.jpg" /></a>
+					<a href="/works/-/detail/=/cid=ipz207/"><img class="photo" src="./img/top/arisa_suzuki04-1000x665.jpg" /></a>
 				</li>
 			</ul>
 		</div>
@@ -53,31 +53,50 @@
 		<a class="mainMenu" href="/gallery"><img src="./img/thumb/nakazato_lisa031-210x139.jpg"><h3>Gallery</h3></a>
 		<a class="mainMenu" href="/collabo"><img src="./img/thumb/kurumi_nishijima01-210x139.jpg"><h3>Collabo</h3></a>
 	</div>
+
 	<footer>
-		<!-- Twitter -->
-		<a href="javascript:twitterUrl()" target="_blank"><img src="./img/icon-twitter.png" alt="" width="40"></a>
-
-		<!-- Facebook -->
-		<a href="javascript:facebookUrl()" target="_blank"><img src="./img/icon-facebook.png" alt="" width="40"></a>
-
-		<!-- LINE -->
-		<span>
-			<script type="text/javascript" src="http://media.line.naver.jp/js/line-button.js?v=20130508" ></script>
-			<script type="text/javascript">
-				new jp.naver.line.media.LineButton({"pc":false,"lang":"ja","type":"d"});
-			</script>
-		</span>
-		<!-- hatena -->
-		<a href="javascript:hatenaUrl()" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加">
-		<img src="./img/icon-hatena.png" alt="このエントリーをはてなブックマークに追加" width="40" height="40" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-		<!-- mixi -->
-		<a href="javascript:mixiUrl()" target="_blank"><img src="./img/icon-mixi.png" alt="" width="40"></a>
-
-		<!-- google -->
-		<a href="https://plus.google.com/share?url=http://google.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-			<img src="./img/icon-google.png" alt="ココはお好きにどぞ" width="40"/>
-		</a>
-
+		<ul class="share">
+			<li>
+				<!-- Twitter -->
+				<a href="javascript:twitterUrl()" target="_blank"><img src="./img/icon-twitter.png" alt="" width="40"></a>
+			</li>
+			<li>
+				<!-- Facebook -->
+				<a href="javascript:facebookUrl()" target="_blank"><img src="./img/icon-facebook.png" alt="" width="40"></a>
+			</li>
+			<li>
+				<!-- LINE -->
+				<span>
+					<script type="text/javascript" src="http://media.line.naver.jp/js/line-button.js?v=20130508" ></script>
+					<script type="text/javascript">
+						new jp.naver.line.media.LineButton({"pc":false,"lang":"ja","type":"d"});
+					</script>
+				</span>
+			</li>
+			<li>
+				<!-- hatena -->
+				<a href="javascript:hatenaUrl()" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加">
+				<img src="./img/icon-hatena.png" alt="このエントリーをはてなブックマークに追加" width="40" height="40" style="border: none;" /></a>
+			</li>
+			<li>
+				<!-- mixi -->
+				<a href="javascript:mixiUrl()"><img src="./img/icon-mixi.png" alt="" width="40"></a>
+			</li>
+			<li>
+				<!-- google -->
+				<a href="javascript:googleUrl()">
+					<img src="./img/icon-google.png" alt="ココはお好きにどぞ" width="40"/>
+				</a>
+			</li>
+			<li>
+				<!-- pinterest -->
+				<a href="javascript:pinterestUrl()"><img src="./img/icon-pinterest.png" alt="pinterest" width="40"></a>
+			</li>
+			<li>
+				<!-- tumblr-->
+				<a href="javascript:tumblrUrl()"><img alt="share on tumblr" src="./img/icon-tumblr.png" width="40"/></a>
+			</li>
+		</ul>
 	</footer>
 </body>
 </html>
