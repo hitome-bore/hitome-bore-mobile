@@ -10,6 +10,10 @@ $(window).load(function() {
 	});
 });
 
+// slidemenu
+$("#menu_button").slideMenu({main_contents: "#container"});
+
+
 function replaceAll(expression, org, dest){
 	return expression.split(org).join(dest);
 }

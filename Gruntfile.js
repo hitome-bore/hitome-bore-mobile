@@ -64,6 +64,7 @@ module.exports = function(grunt) {
 						'./app/js/hitomebore.js': [
 							'./tmp/js/lib/jquery-2.0.3.js',
 							'./tmp/js/lib/jquery.flexslider.js',
+							'./tmp/js/lib/jquery.slidemenu.js',
 							'./tmp/js/lib/klass.min.js',
 							'./tmp/js/lib/code.photoswipe-3.0.5.js',
 							'./tmp/js/main.js'
