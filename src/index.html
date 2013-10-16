@@ -8,34 +8,28 @@
 	<link rel="stylesheet" href="./css/main.css" type="text/css">
 	<link rel="stylesheet" href="./css/flexslider.css" type="text/css">
 	<link rel="stylesheet" href="./css/photoswipe.css" type="text/css">
-	<link rel="stylesheet" href="./css/jquery.slidemenu.css" type="text/css">
 	<script src="./js/lib/jquery-2.0.3.js" type="text/javascript"></script>
 	<script src="./js/lib/jquery.flexslider.js" type="text/javascript"></script>
-	<script src="./js/lib/jquery.slidemenu.js" type="text/javascript"></script>
 	<script src="./js/lib/code.photoswipe-3.0.5.js" type="text/javascript"></script>
 	<script src="./js/main.js" type="text/javascript"></script>
 </head>
 <body>
-	<div id="slidemenu" >
-		<div id="slidemenu_contents" style="">
-			<ul id="slidemenu_list">
-				<li><h2>Menu</h2></li>
-				<li><a href="/gallery">Gallery</a></li>
-				<li><a href="/collabo">Collabo</a></li>
-				<li><a href="/news">News</a></li>
-				<li><a href="/about">About us</a></li>
-				<li><a href="/contact">Contact</a></li>
-				<li><a href="/entry">モデル募集</a></li>
-				<li><a href="/entry">タイアップ企業募集</a></li>
-				<li><a href="/entry">Privacy Policy</a></li>
-				<li><a href="/entry">利用規約</a></li>
-			</ul>
-		</div>
+	<div id="menu">
+		<ul>
+			<li><a href="/"><div class="list">Home</div></a></li>
+			<li><a href="/gallery"><div class="list">Gallery</div></a></li>
+			<li><a href="/collabo"><div class="list">Collabo</div></a></li>
+			<li><a href="/news"><div class="list">News</div></a></li>
+			<li><a href="/about"><div class="list">About us</div></a></li>
+			<li><a href="/contact"><div class="list">Contact</div></a></li>
+			<li><a href="/entry"><div class="list">モデル募集</div></a></li>
+			<li><a href="/entry"><div class="list">Privacy Policy</div></a></li>
+			<li><a href="/entry"><div class="list">利用規約</div></a></li>
+		</ul>
 	</div>
-	<div id="container">
 	<header id="header">
 		<div id="logo"><h1><a href="/"><img src="./img/hitomebore_logo.png" alt="logo" width="202" height="42"></a></h1></div>
-		<div id="menu_button"><img src="./img/icon-menu.png" alt="menu icon" width="40"></div>
+		<div id="menu_button">Menu<img src="./img/icon-dropdown.png"></div>
 	</header>
 	<div id="main">
 		<!--slide-box-->
@@ -132,6 +126,5 @@
 		</ul>
 		<p id="copyright">Copyright © 2013 片目惚れ~ひとめぼれ~. All Rights Reserved.</p>
 	</footer>
-	</div>
 </body>
 </html>

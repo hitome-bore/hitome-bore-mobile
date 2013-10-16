@@ -10,8 +10,10 @@ $(window).load(function() {
 	});
 });
 
-// slidemenu
-$("#menu_button").slideMenu({main_contents: "#container"});
+// photo swipe
+document.addEventListener('DOMContentLoaded', function(){
+	var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+}, false);
 
 
 function replaceAll(expression, org, dest){
@@ -80,3 +82,12 @@ function tumblrUrl() {
 	// document.getElementById("tumblr_button_abc123").appendChild(tumblr_button);
 	window.open(href);
 }
+
+$(document).ready(function(){
+	$('#menu_button').click(function() {
+		$('#menu').slideToggle(273);
+		// $(this).parent().prev().slideToggle('fast');
+	// }).parent().prev().hide();
+	});
+	$('#menu').hide();
+});

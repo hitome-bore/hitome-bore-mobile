@@ -152,14 +152,77 @@ input,
 select {
   vertical-align: middle;
 }
-body {
-  font-family: Univers Verdana "Trebuchet MS" Arial Helvetica sans-serif;
-}
 /* original */
-body #container {
+body {
   background-color: #222;
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #262626), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #262626), color-stop(0.75, #262626), color-stop(0.75, transparent), to(transparent));
   -webkit-background-size: 17px 17px;
+  font-family: Univers Verdana "Trebuchet MS" Arial Helvetica sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+#menu {
+  width: 100%;
+  height: 240px;
+  text-align: center;
+  font-size: 12px;
+  border-bottom: solid 5px #444;
+}
+#menu li {
+  width: 33.33%;
+  height: 80px;
+  float: left;
+  line-height: 80px;
+  text-decoration: none;
+}
+#menu li:nth-child(1) {
+  background-color: #cc175b;
+}
+#menu li:nth-child(2) {
+  background-color: #fff;
+}
+#menu li:nth-child(2) a {
+  color: #333;
+}
+#menu li:nth-child(3) {
+  background-color: #333;
+}
+#menu li:nth-child(4) {
+  background-color: #fff;
+}
+#menu li:nth-child(4) a {
+  color: #333;
+}
+#menu li:nth-child(5) {
+  background-color: #333;
+}
+#menu li:nth-child(6) {
+  background-color: #fff;
+}
+#menu li:nth-child(6) a {
+  color: #333;
+}
+#menu li:nth-child(7) {
+  background-color: #333;
+}
+#menu li:nth-child(8) {
+  background-color: #fff;
+}
+#menu li:nth-child(8) a {
+  color: #333;
+}
+#menu li:nth-child(9) {
+  background-color: #cc175b;
+}
+#menu a {
+  color: #fff;
+  width: 33.33%;
+}
+#menu .list {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
 }
 header {
   height: 55px;
@@ -174,14 +237,20 @@ header #logo {
 header #menu_button {
   float: right;
   height: 55px;
+  width: 67px;
   line-height: 55px;
-  margin-right: 10px;
+  text-align: center;
   vertical-align: middle;
+  background-color: #232323;
+  color: #fff;
+  font-size: 13px;
 }
 header #menu_button img {
-  vertical-align: middle;
+  margin-left: 8px;
+  height: 12px;
+  width: 8px;
 }
-#container h2 {
+h2 {
   color: #fff;
   line-height: 30px;
   padding-left: 10px;
@@ -333,4 +402,34 @@ footer h3 {
   color: #666;
   font-size: 12px;
   margin: 10px 10px;
+}
+.photo-list {
+  margin: 5px 0px;
+}
+.photo-list img {
+  width: 100%;
+}
+.photo-list .filter {
+  width: 100%;
+  height: 160px;
+  margin-top: -160px;
+  position: absolute;
+  background: -moz-linear-gradient(top, rgba(10,10,10,0), #111);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10,10,10,0)), to(#111));
+}
+.photo-list .filter h3 {
+  color: #cc175b;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  bottom: 39px;
+  position: absolute;
+  margin-left: 10px;
+}
+.photo-list .filter p {
+  bottom: 25px;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  margin-left: 10px;
 }
