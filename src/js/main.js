@@ -11,10 +11,9 @@ $(window).load(function() {
 });
 
 // photo swipe
-document.addEventListener('DOMContentLoaded', function(){
-	var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
-}, false);
-
+$(document).ready(function(){
+	var myPhotoSwipe = $("#Gallery a").photoSwipe({ enableMouseWheel: true , enableKeyboard: false });
+});
 
 function replaceAll(expression, org, dest){
 	return expression.split(org).join(dest);
