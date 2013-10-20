@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*
+Theme Name:		hitomebore
+Theme URI:		http://hitome-bore.com/
+Description:	hitomebore unique theme
+Author:			moroiseiya
+Author URI:		seiichi.of.joytoy@gmail.com
+Version:		ver. bp2.0
+*/
+
+@import url("shared/css/reset.css");
+@import url("shared/css/base.css");
+@import url("shared/css/layout.css");
+@import url("shared/css/header.css");
+@import url("shared/css/main_area.css");
+@import url("shared/css/right_area.css");
+@import url("shared/css/footer.css");
+
+.viewAll {text-align: right;font-size: 14px;}
