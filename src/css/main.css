@@ -162,16 +162,16 @@ body {
 }
 #menu {
   width: 100%;
-  height: 240px;
+  height: 150px;
   text-align: center;
   font-size: 12px;
   border-bottom: solid 5px #444;
 }
 #menu li {
   width: 33.33%;
-  height: 80px;
+  height: 50px;
   float: left;
-  line-height: 80px;
+  line-height: 50px;
   text-decoration: none;
 }
 #menu li:nth-child(1) {
@@ -219,8 +219,8 @@ body {
 }
 #menu .list {
   width: 100%;
-  height: 80px;
-  line-height: 80px;
+  height: 50px;
+  line-height: 50px;
 }
 header {
   height: 55px;
@@ -294,7 +294,8 @@ h2 {
   color: #666;
   background-color: rgba(40,40,40,0.9);
 }
-.mainMenu {
+.mainMenu,
+.cover {
   width: 100%;
   height: 120px;
   overflow: hidden;
@@ -302,32 +303,38 @@ h2 {
   position: relative;
   margin: 5px 0px;
 }
-.mainMenu img {
+.mainMenu img,
+.cover img {
   width: 100%;
   margin-top: -20%;
   position: absolute;
 }
-.mainMenu h3 {
+.cover #filter {
   width: 100%;
   height: 120px;
   background-color: rgba(0,0,0,0.35);
   position: absolute;
-  text-align: center;
-  line-height: 120px;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 14px;
   color: #eee;
+  text-align: center;
+}
+.cover h3 {
+  margin-top: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #cc175b;
 }
 footer {
   margin-top: 5px;
   width: 100%;
+  float: left;
 }
 footer h3 {
   padding-left: 10px;
   height: 30px;
   line-height: 30px;
   color: #fff;
-  background-color: #222;
+  background-color: #272727;
 }
 .about {
   padding: 5px 10px;
@@ -338,6 +345,7 @@ footer h3 {
   color: #fff;
   line-height: 18px;
   text-align: left;
+  margin-bottom: 5px;
 }
 .about a {
   width: 90px;
@@ -413,8 +421,8 @@ footer h3 {
   height: 160px;
   margin-top: -160px;
   position: absolute;
-  background: -moz-linear-gradient(top, rgba(10,10,10,0), #111);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10,10,10,0)), to(#111));
+  background: -moz-linear-gradient(top, rgba(1,1,1,0), #111);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1,1,1,0)), to(#111));
 }
 .photo-list .filter h3 {
   color: #cc175b;
@@ -432,10 +440,84 @@ footer h3 {
   position: absolute;
   margin-left: 10px;
 }
+#Gallery {
+  margin: 5px 0px;
+}
 #Gallery li {
   width: 50%;
   float: left;
 }
 #Gallery img {
   width: 100%;
+}
+.noImage {
+  display: table-cell;
+  vertical-align: middle;
+}
+#profile {
+  color: #fff;
+  margin: 10px;
+  font-size: 14px;
+  text-align: right;
+}
+#profile #wrapper {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+#profile #thumb {
+  display: table-cell;
+  height: 100px;
+}
+#profile img {
+  width: 100%;
+  vertical-align: middle;
+}
+#profile #info {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+  text-align: left;
+}
+#profile dt {
+  color: #bbb;
+  font-size: 12px;
+  line-height: 16px;
+}
+#profile dd {
+  font-size: 13px;
+  line-height: 16px;
+}
+#profile p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+#profile a {
+  color: #666;
+}
+#modelinfo h3 {
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #272727;
+}
+#modelinfo dl {
+  margin: 15px 10px;
+}
+#modelinfo dt {
+  color: #bbb;
+  font-size: 12px;
+  line-height: 16px;
+}
+#modelinfo dd {
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+#modelinfo a {
+  color: #7c7c7c;
 }

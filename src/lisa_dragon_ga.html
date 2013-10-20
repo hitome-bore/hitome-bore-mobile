@@ -20,10 +20,10 @@
 			<li><a href="/"><div class="list">Home</div></a></li>
 			<li><a href="/gallery"><div class="list">Gallery</div></a></li>
 			<li><a href="/collabo"><div class="list">Collabo</div></a></li>
+			<li><a href="/model"><div class="list">Model</div></a></li>
 			<li><a href="/news"><div class="list">News</div></a></li>
 			<li><a href="/about"><div class="list">About us</div></a></li>
 			<li><a href="/contact"><div class="list">Contact</div></a></li>
-			<li><a href="/entry"><div class="list">モデル募集</div></a></li>
 			<li><a href="/entry"><div class="list">Privacy Policy</div></a></li>
 			<li><a href="/entry"><div class="list">利用規約</div></a></li>
 		</ul>
@@ -33,7 +33,7 @@
 		<div id="menu_button">Menu<img src="./img/icon-dropdown.png"></div>
 	</header>
 	<div id="main">
-
+	<h2>Photo Gallery - 梨紗・ドラゴン</h2>
 	<ul id="Gallery">
 		<li><a href="./img/lisa_dragon_ga_demo/nakazato_lisa09-670x445.jpg"><img src="./img/lisa_dragon_ga_demo/thumb/nakazato_lisa09-210x139.jpg" alt=""></a></li>
 		<li><a href="./img/lisa_dragon_ga_demo/nakazato_lisa11-670x445.jpg"><img src="./img/lisa_dragon_ga_demo/thumb/nakazato_lisa11-210x139.jpg" alt=""></a></li>
@@ -49,6 +49,59 @@
 		<li><a href="./img/lisa_dragon_ga_demo/nakazato_lisa081-670x445.jpg"><img src="./img/lisa_dragon_ga_demo/thumb/nakazato_lisa081-210x139.jpg" alt=""></a></li>
 		<li><a href="./img/lisa_dragon_ga_demo/nakazato_lisa101-670x445.jpg"><img src="./img/lisa_dragon_ga_demo/thumb/nakazato_lisa101-210x139.jpg" alt=""></a></li>
 	</ul>
+	<h2>Model Infomation</h2>
+	<div id="profile">
+		<div id="wrapper">
+			<div id="thumb">
+				<img src="./img/lisa_dragon_ga_demo/template1-210x139.jpg" alt="profile-thumb">
+			</div>
+			<div id="info">
+				<dl>
+					<dt>名前</dt>
+					<dd>梨紗・ドラゴン</dd>
+					<dt>身長</dt>
+					<dd>162cm</dd>
+					<dt>血液型</dt>
+					<dd>A型</dd>
+				</dl>
+			</div>
+		</div>
+		<p>こんにちわ！梨紗ドラゴンです！<br>
+ビックバンが好きなわけではありません＞＜<br>
+ぴちぴから呼ばれてるんです！！<br>
+なんでドラゴンなんだろぉ（？○？）</p>
+		<a href="/model/lisa_dragon.html">梨紗・ドラゴンのプロフィールを見る</a>
+	</div>
+
+	<script type="text/javascript">
+// photo swipe
+$(document).ready(function(){
+	var gallery = $('#Gallery');
+	var galleryList = gallery.children('li');
+	var myPhotoSwipe = gallery.find('a').photoSwipe({ enableMouseWheel: true , enableKeyboard: false });
+
+	function changeGalleryHeight() {
+		var photoCount = galleryList.length;
+		var photoHeight = galleryList.height();
+		var photoWidth = galleryList.width();
+		var photoRows = photoCount / 2;
+		if ((galleryList.length % 2) === 1) {
+			photoRows = photoRows - 0.5 + 1;
+		}
+		gallery.css('height', photoRows * photoHeight);
+	}
+	if ((galleryList.length % 2) === 1) {
+		// TODO change the image later.
+		gallery.append('<li><div class="noImage" style="height:'+galleryList.height()+'px;"><img id="noImageLogo" src="./img/hitomebore_logo.png"></div></li>');
+	}
+	changeGalleryHeight();
+	$(window).resize(function() {
+		changeGalleryHeight();
+	});
+});
+
+
+	</script>
 
 
 

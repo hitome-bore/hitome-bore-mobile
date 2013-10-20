@@ -10,10 +10,6 @@ $(window).load(function() {
 	});
 });
 
-// photo swipe
-$(document).ready(function(){
-	var myPhotoSwipe = $("#Gallery a").photoSwipe({ enableMouseWheel: true , enableKeyboard: false });
-});
 
 function replaceAll(expression, org, dest){
 	return expression.split(org).join(dest);
@@ -85,8 +81,6 @@ function tumblrUrl() {
 $(document).ready(function(){
 	$('#menu_button').click(function() {
 		$('#menu').slideToggle(273);
-		// $(this).parent().prev().slideToggle('fast');
-	// }).parent().prev().hide();
 	});
 	$('#menu').hide();
 });
