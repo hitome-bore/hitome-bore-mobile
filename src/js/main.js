@@ -82,5 +82,4 @@ $(document).ready(function(){
 	$('#menu_button').click(function() {
 		$('#menu').slideToggle(273);
 	});
-	$('#menu').hide();
 });

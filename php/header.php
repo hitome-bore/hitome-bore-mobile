@@ -4,16 +4,17 @@
 	<div id="menu">
 		<ul>
 			<li><a href="/"><div class="list">Home</div></a></li>
-			<li><a href="/gallery"><div class="list">Gallery</div></a></li>
-			<li><a href="/collabo"><div class="list">Collabo</div></a></li>
-			<li><a href="/model"><div class="list">Model</div></a></li>
-			<li><a href="/news"><div class="list">News</div></a></li>
-			<li><a href="/about"><div class="list">About us</div></a></li>
-			<li><a href="/contact"><div class="list">Contact</div></a></li>
-			<li><a href="/entry"><div class="list">Privacy Policy</div></a></li>
-			<li><a href="/entry"><div class="list">利用規約</div></a></li>
+			<li><a href="/gallery/"><div class="list">Gallery</div></a></li>
+			<li><a href="/collabo/"><div class="list">Collabo</div></a></li>
+			<li><a href="/model/"><div class="list">Model</div></a></li>
+			<li><a href="/news/"><div class="list">News</div></a></li>
+			<li><a href="/about/"><div class="list">About us</div></a></li>
+			<li><a href="/contact/"><div class="list">Contact</div></a></li>
+			<li><a href="/privacy/"><div class="list">Privacy Policy</div></a></li>
+			<li><a href="/entry/"><div class="list">利用規約</div></a></li>
 		</ul>
 	</div>
+	<script type="text/javascript">$('#menu').hide();</script>
 	<header id="header">
 		<div id="logo"><h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/shared/img/hitomebore_logo.png" alt="logo" width="202" height="42"></a></h1></div>
 		<div id="menu_button">Menu<img src="<?php echo get_template_directory_uri(); ?>/shared/img/icon-dropdown.png"></div>
