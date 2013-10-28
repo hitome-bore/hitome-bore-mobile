@@ -1,0 +1,1 @@
+[contact-form-7 id="6" title="お問い合わせ"]

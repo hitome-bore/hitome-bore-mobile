@@ -5,6 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="./css/main.css" type="text/css">
+	<link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+	<link rel="stylesheet" href="./css/photoswipe.css" type="text/css">
+	<script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+	<script src="./js/lib/jquery.flexslider.min.js" type="text/javascript"></script>
+	<script src="./js/lib/klass.min.js" type="text/javascript"></script>
+	<script src="./js/lib/code.photoswipe-3.0.5.min.js" type="text/javascript"></script>
+	<script src="./js/main.min.js" type="text/javascript"></script>
 <?php else: ?><!-- /sp -->
 <html lang="ja" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Article">
 <head>

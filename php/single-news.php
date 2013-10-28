@@ -6,10 +6,12 @@
 <?php while(have_posts()): the_post(); ?>
 
 <h2>News <?php the_title(); ?></h2>
+<div id="news">
 <dl>
 <dt><?php the_date(); ?></dt>
 <dd><?php the_content(); ?></dd>
 </dl>
+</div>
 <?php endwhile; ?>
 <?php else: ?>
 <p>記事がありません。</p>

@@ -59,7 +59,12 @@ module.exports = function(grunt) {
 					mangle: true,
 					preserveComments: 'some'
 				},
-				files: [
+                files: {
+                './src/js/lib/jquery.flexslider.min.js':['./src/js/lib/jquery.flexslider.js'],
+                        './src/js/lib/jquery.slidemenu.min.js':['./src/js/lib/jquery.slidemenu.js'],
+                        './src/js/lib/code.photoswipe-3.0.5.min.js':['./src/js/lib/code.photoswipe-3.0.5.js'],
+                        './src/js/main.min.js':['./src/js/main.js']}
+/*				files: [
 					{
 						'./app/js/hitomebore.js': [
 							'./tmp/js/lib/jquery-2.0.3.js',
@@ -70,7 +75,7 @@ module.exports = function(grunt) {
 							'./tmp/js/main.js'
 						]
 					}
-				]
+				]*/
 			}
 		},
 
@@ -81,7 +86,7 @@ module.exports = function(grunt) {
 				src: '**/*.css',
 				dest: './tmp/css',
 				ext: '.min.css'
-			},
+			},/*
 			conbine: {
 				files: {
 					'./app/css/hitomebore.css': [
@@ -90,7 +95,7 @@ module.exports = function(grunt) {
 						'./tmp/css/main.min.css'
 					]
 				}
-			}
+			}*/
 		},
 
 		stylus: {
@@ -98,7 +103,7 @@ module.exports = function(grunt) {
 				src: './src/css/main.styl',
 				dest: './src/css/main.css',
 				options: {
-					compress: false
+					compress: true
 				}
 			}
 		},
