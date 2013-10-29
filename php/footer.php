@@ -5,8 +5,8 @@
 			<p>片目惚れ~ひとめぼれ~は眼帯美人を高画質写真もりだくさんでご紹介する眼帯美人メディアです。</p>
 			<a href="/about">詳細</a>
 		</div>
-		<div id="entrybutton"><a href="/entry">モデル募集中！</a></div>
-		<div id="collaboEntry"><a href="/collabo-entry">タイアップ企業募集！</a></div>
+		<div class="footerbanner"><a href="/entry"><img src="<?php echo get_template_directory_uri(); ?>/shared/img/banner-entry.png" alt="モデル募集" width="260px" height="57px" ></a></div>
+		<div class="footerbanner"><a href="/collabo-entry"><img src="<?php echo get_template_directory_uri(); ?>/shared/img/banner-tieup.png" alt="タイアップ企業募集" width="260px" height="57px" ></a></div>
 		<h3>Share</h3>
 		<ul class="share">
 			<li>

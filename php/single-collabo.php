@@ -129,6 +129,32 @@
 
   <?php endwhile; ?>
 	</ul>
+	<script type="text/javascript">
+// photo swipe
+	var gallery = $('#Gallery');
+	var galleryList = gallery.children('li');
+	var myPhotoSwipe = gallery.find('a').photoSwipe({ enableMouseWheel: true , enableKeyboard: false });
+
+	function changeGalleryHeight() {
+		var photoCount = galleryList.length;
+		var photoHeight = galleryList.height();
+		var photoWidth = galleryList.width();
+		var photoRows = photoCount / 2;
+		if ((galleryList.length % 2) === 1) {
+			photoRows = photoRows - 0.5 + 1;
+		}
+		gallery.css('height', photoRows * photoHeight);
+	}
+	if ((galleryList.length % 2) === 1) {
+		// TODO change the image later.
+		gallery.append('<li><img src="./img/no_img.png"></li>');
+	}
+	changeGalleryHeight();
+	$(window).resize(function() {
+		changeGalleryHeight();
+	});
+
+</script>
 
 	<h2>Collabo Infomation</h2>
 	<div id="profile">
@@ -161,34 +187,6 @@ $shopInfo = get_post_meta($post->ID,'shop_info',true);
 		</div>
 		<a href="<?php echo get_post_meta($post->ID,'model_url',true); ?>" title="<?php echo get_post_meta($post->ID,'model_name',true); ?>のプロフィール"><?php echo get_post_meta($post->ID,'model_name',true); ?>のプロフィールを見る</a>
 	</div>
-
-	<script type="text/javascript">
-// photo swipe
-$(document).ready(function(){
-	var gallery = $('#Gallery');
-	var galleryList = gallery.children('li');
-	var myPhotoSwipe = gallery.find('a').photoSwipe({ enableMouseWheel: true , enableKeyboard: false });
-
-	function changeGalleryHeight() {
-		var photoCount = galleryList.length;
-		var photoHeight = galleryList.height();
-		var photoWidth = galleryList.width();
-		var photoRows = photoCount / 2;
-		if ((galleryList.length % 2) === 1) {
-			photoRows = photoRows - 0.5 + 1;
-		}
-		gallery.css('height', photoRows * photoHeight);
-	}
-	if ((galleryList.length % 2) === 1) {
-		// TODO change the image later.
-		gallery.append('<li><img src="./img/no_img.png"></li>');
-	}
-	changeGalleryHeight();
-	$(window).resize(function() {
-		changeGalleryHeight();
-	});
-});
-</script>
 
 <?php else: ?>
 <p>記事がありません。</p>

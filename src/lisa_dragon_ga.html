@@ -50,6 +50,34 @@
 		<li><a href="./img/lisa_dragon_ga_demo/nakazato_lisa081-670x445.jpg"><img src="./img/lisa_dragon_ga_demo/thumb/nakazato_lisa081-210x139.jpg" alt=""></a></li>
 		<li><a href="./img/lisa_dragon_ga_demo/nakazato_lisa101-670x445.jpg"><img src="./img/lisa_dragon_ga_demo/thumb/nakazato_lisa101-210x139.jpg" alt=""></a></li>
 	</ul>
+	<script type="text/javascript">
+// photo swipe
+// $(document).ready(function(){
+	var gallery = $('#Gallery');
+	var galleryList = gallery.children('li');
+	var myPhotoSwipe = gallery.find('a').photoSwipe({ enableMouseWheel: true , enableKeyboard: false });
+
+	function changeGalleryHeight() {
+		var photoCount = galleryList.length;
+		var photoHeight = galleryList.height();
+		var photoWidth = galleryList.width();
+		var photoRows = photoCount / 2;
+		if ((galleryList.length % 2) === 1) {
+			photoRows = photoRows - 0.5 + 1;
+		}
+		gallery.css('height', photoRows * photoHeight);
+	}
+	if ((galleryList.length % 2) === 1) {
+		// TODO change the image later.
+		gallery.append('<li><img src="./img/no_img.png"></li>');
+	}
+	changeGalleryHeight();
+	$(window).resize(function() {
+		changeGalleryHeight();
+	});
+// });
+
+	</script>
 	<h2>Model Infomation</h2>
 	<div id="profile">
 		<div id="wrapper">
@@ -73,38 +101,6 @@
 なんでドラゴンなんだろぉ（？○？）</p>
 		<a href="/model/lisa_dragon.html">梨紗・ドラゴンのプロフィールを見る</a>
 	</div>
-
-	<script type="text/javascript">
-// photo swipe
-$(document).ready(function(){
-	var gallery = $('#Gallery');
-	var galleryList = gallery.children('li');
-	var myPhotoSwipe = gallery.find('a').photoSwipe({ enableMouseWheel: true , enableKeyboard: false });
-
-	function changeGalleryHeight() {
-		var photoCount = galleryList.length;
-		var photoHeight = galleryList.height();
-		var photoWidth = galleryList.width();
-		var photoRows = photoCount / 2;
-		if ((galleryList.length % 2) === 1) {
-			photoRows = photoRows - 0.5 + 1;
-		}
-		gallery.css('height', photoRows * photoHeight);
-	}
-	if ((galleryList.length % 2) === 1) {
-		// TODO change the image later.
-		gallery.append('<li><img src="./img/no_img.png"></li>');
-	}
-	changeGalleryHeight();
-	$(window).resize(function() {
-		changeGalleryHeight();
-	});
-});
-
-
-	</script>
-
-
 
 	</div><!-- main -->
 	<footer>
