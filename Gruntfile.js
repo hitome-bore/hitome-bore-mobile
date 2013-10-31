@@ -60,10 +60,10 @@ module.exports = function(grunt) {
 					preserveComments: 'some'
 				},
                 files: {
-                './src/js/lib/jquery.flexslider.min.js':['./src/js/lib/jquery.flexslider.js'],
-                        './src/js/lib/jquery.slidemenu.min.js':['./src/js/lib/jquery.slidemenu.js'],
-                        './src/js/lib/code.photoswipe-3.0.5.min.js':['./src/js/lib/code.photoswipe-3.0.5.js'],
-                        './src/js/main.min.js':['./src/js/main.js']}
+                './src/js/lib/jquery.flexslider.sp.min.js':['./src/js/lib/jquery.flexslider.js'],
+                        './src/js/lib/jquery.slidemenu.sp.min.js':['./src/js/lib/jquery.slidemenu.js'],
+                        './src/js/lib/code.photoswipe-3.0.5.sp.min.js':['./src/js/lib/code.photoswipe-3.0.5.js'],
+                        './src/js/main.sp.min.js':['./src/js/main.js']}
 /*				files: [
 					{
 						'./app/js/hitomebore.js': [

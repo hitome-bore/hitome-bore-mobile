@@ -8,11 +8,11 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/shared/css/main.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/shared/css/flexslider.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/shared/css/photoswipe.css" type="text/css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/shared/js/lib/jquery.flexslider.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.sp.min.js" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/shared/js/lib/jquery.flexslider.sp.min.js" type="text/javascript"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/shared/js/lib/klass.min.js" type="text/javascript"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/shared/js/lib/code.photoswipe-3.0.5.min.js" type="text/javascript"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/shared/js/main.min.js" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/shared/js/lib/code.photoswipe-3.0.5.sp.min.js" type="text/javascript"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/shared/js/main.sp.min.js" type="text/javascript"></script>
 <?php else: ?><!-- /sp -->
 <html lang="ja" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Article">
 <head>

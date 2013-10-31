@@ -23,18 +23,16 @@ $my_query = new WP_Query($args); ?>
 
 <?php while($my_query->have_posts()): $my_query->the_post(); ?>
 
-		<li>
+		<li><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
 <?php $photo01 = get_post_meta($post->ID, 'photo01', true); if($photo01): // サムネイル画像がある場合 ?>
 <?php echo wp_get_attachment_image($photo01, 'thumbnail'); ?>
 <?php else: /* サムネイル画像がない場合 */ ?><img src="<?php echo get_template_directory_uri(); ?>/shared/img/noimg_thumbnail.png" alt="<?php the_title(); ?>">
 <?php endif; ?>
-			<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
-				<div class="filter">
-					<h3><?php the_title(); ?></h3>
-					<p><?php the_time("Y年m月d日"); ?></p>
-				</div>
-			</a>
-		</li>
+			<div class="filter">
+				<h3><?php the_title(); ?></h3>
+				<p><?php the_time("Y年m月d日"); ?></p>
+			</div>
+		</a></li>
 
 <?php endwhile; wp_reset_query(); ?>
 	</ul>
